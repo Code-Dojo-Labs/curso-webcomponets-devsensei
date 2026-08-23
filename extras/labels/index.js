@@ -14,9 +14,10 @@ const CreateLabels = (() => {
     const __OPTIONS = {
         method: "GET",
         headers: {
-            Authorization: `Basic ${btoa(`${OWNER}:${TOKEN}`)}`,
+            Authorization: `Bearer ${TOKEN}`,
             Accept: "application/vnd.github.v3+json",
-            "Content-Type": "application/json"
+            "Content-Type": "application/json",
+            "User-Agent": "Node.js-Script"
         },
     };
 
