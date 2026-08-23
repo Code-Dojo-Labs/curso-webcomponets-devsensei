@@ -69,12 +69,8 @@ const CreateLabels = (() => {
         try {
             response = __OPTIONS.method === "DELETE" ? [{ label: labelName, erase: 1 }] : await REQUEST.json();
         } catch (NotifyError) {
-            console.error(`Error en la peticion a la api de github, ${NotifyError}`);
             console.error(NotifyError);
         }
-        console.log("===============");
-        console.log(response);
-        console.log("===============");
         return response;
     };
 
@@ -94,13 +90,15 @@ const CreateLabels = (() => {
      */
     const __borrar = async () => {
         const LABELS = await __listar();
-        let count = 0;
+        console.log("=======================================");
+        console.log(LABELS);
+        /*let count = 0;
         __OPTIONS.method = "DELETE";
         for (const { name } of LABELS) {
             await __requestApi(`/${name}`);
             count += 1;
         }
-        console.log(`Etiquetas borradas = ${count}`);
+        console.log(`Etiquetas borradas = ${count}`);*/
     };
 
     /**
