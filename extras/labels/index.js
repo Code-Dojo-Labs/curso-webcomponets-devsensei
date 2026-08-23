@@ -90,6 +90,7 @@ const CreateLabels = (() => {
      */
     const __borrar = async () => {
         const LABELS = await __listar();
+        console.log(LABELS);
         let count = 0;
         __OPTIONS.method = "DELETE";
         for (const { name } of LABELS) {
