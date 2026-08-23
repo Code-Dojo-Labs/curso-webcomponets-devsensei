@@ -66,6 +66,7 @@ const CreateLabels = (() => {
      * @return Array.
      */
     const __requestApi = async (labelName = "") => {
+        console.log(`https://api.github.com/repos/${REPOSITORY}/labels${labelName}`);
         const REQUEST = await fetch(`https://api.github.com/repos/${REPOSITORY}/labels${labelName}`, __OPTIONS);
         let response = [{ name: labelName, erase: 0 }];
         try {
