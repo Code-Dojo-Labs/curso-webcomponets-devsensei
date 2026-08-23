@@ -65,6 +65,7 @@ const CreateLabels = (() => {
      */
     const __requestApi = async (labelName = "") => {
         console.log(`Request URL: https://api.github.com/repos/${REPOSITORY}/labels${labelName}`);
+        console.log(`Request : ${JSON.stringify(__OPTIONS, '', 2)}`);
         const REQUEST = await fetch(`https://api.github.com/repos/${REPOSITORY}/labels${labelName}`, __OPTIONS);
         let response = [{ name: labelName, erase: 0 }];
         try {
