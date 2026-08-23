@@ -64,15 +64,17 @@ const CreateLabels = (() => {
      * @return Array.
      */
     const __requestApi = async (labelName = "") => {
-        console.log(`Request URL: https://api.github.com/repos/${REPOSITORY}/labels${labelName}`);
-        console.log(`Request : ${JSON.stringify(__OPTIONS, '', 2)}`);
         const REQUEST = await fetch(`https://api.github.com/repos/${REPOSITORY}/labels${labelName}`, __OPTIONS);
         let response = [{ name: labelName, erase: 0 }];
         try {
             response = __OPTIONS.method === "DELETE" ? [{ label: labelName, erase: 1 }] : await REQUEST.json();
         } catch (NotifyError) {
+            console.error(`Error en la peticion a la api de github, ${NotifyError}`);
             console.error(NotifyError);
         }
+        console.log("===============");
+        console.log(response);
+        console.log("===============");
         return response;
     };
 
