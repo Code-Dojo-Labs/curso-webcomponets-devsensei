@@ -10,8 +10,6 @@ const CreateLabels = (() => {
     const REPOSITORY = process.argv.pop();
     const OWNER = process.argv.pop();
     const TOKEN = process.argv.pop();
-    console.log(`Repositorio: ${REPOSITORY}`);
-    console.log(`Owner: ${OWNER}`);
 
     const __OPTIONS = {
         method: "GET",
@@ -68,11 +66,14 @@ const CreateLabels = (() => {
      * @return Array.
      */
     const __requestApi = async (labelName = "") => {
+        console.log("Request Api");
         const REQUEST = await fetch(`https://api.github.com/repos/${REPOSITORY}/labels${labelName}`, __OPTIONS);
         let response = [{ name: labelName, erase: 0 }];
         try {
+            console.log("Request Api try");
             response = __OPTIONS.method === "DELETE" ? [{ label: labelName, erase: 1 }] : await REQUEST.json();
         } catch (NotifyError) {
+            console.log("Request Api catch");
             console.error(NotifyError);
         }
         return response;
