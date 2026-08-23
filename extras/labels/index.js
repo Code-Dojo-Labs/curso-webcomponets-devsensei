@@ -93,15 +93,13 @@ const CreateLabels = (() => {
      */
     const __borrar = async () => {
         const LABELS = await __listar();
-        console.log("=======================================");
-        console.log(LABELS);
-        /*let count = 0;
+        let count = 0;
         __OPTIONS.method = "DELETE";
         for (const { name } of LABELS) {
             await __requestApi(`/${name}`);
             count += 1;
         }
-        console.log(`Etiquetas borradas = ${count}`);*/
+        console.log(`Etiquetas borradas = ${count}`);
     };
 
     /**
