@@ -10,6 +10,8 @@ const CreateLabels = (() => {
     const REPOSITORY = process.argv.pop();
     const OWNER = process.argv.pop();
     const TOKEN = process.argv.pop();
+
+    console.log(process.argv);
     const __OPTIONS = {
         method: "GET",
         headers: {
