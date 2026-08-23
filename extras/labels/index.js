@@ -67,6 +67,8 @@ const CreateLabels = (() => {
      * @return Array.
      */
     const __requestApi = async (labelName = "") => {
+        console.log("================================");
+        console.log(`https://api.github.com/repos/${REPOSITORY}/labels${labelName}`);
         const REQUEST = await fetch(`https://api.github.com/repos/${REPOSITORY}/labels${labelName}`, __OPTIONS);
         let response = [{ name: labelName, erase: 0 }];
         try {
@@ -94,8 +96,6 @@ const CreateLabels = (() => {
     const __borrar = async () => {
         const LABELS = await __listar();
         let count = 0;
-        console.log("===============================");
-        console.log(LABELS);
         /*__OPTIONS.method = "DELETE";
         for (const { name } of LABELS) {
             await __requestApi(`/${name}`);
