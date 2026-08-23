@@ -71,6 +71,7 @@ const CreateLabels = (() => {
         let response = [{ name: labelName, erase: 0 }];
         try {
             console.log("Request Api try");
+            console.log(await REQUEST.json());
             response = __OPTIONS.method === "DELETE" ? [{ label: labelName, erase: 1 }] : await REQUEST.json();
         } catch (NotifyError) {
             console.log("Request Api catch");
@@ -87,8 +88,6 @@ const CreateLabels = (() => {
     const __listar = async () => {
         __OPTIONS.method = "GET";
         const DATA = await __requestApi();
-        console.log(`Etiquetas existentes = ${DATA.length}`);
-        console.log(DATA);
         return DATA;
     };
 
