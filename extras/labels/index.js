@@ -67,16 +67,12 @@ const CreateLabels = (() => {
      * @return Array.
      */
     const __requestApi = async (labelName = "") => {
-        console.log("Request Api");
         const REQUEST = await fetch(`https://api.github.com/repos/${REPOSITORY}/labels${labelName}`, __OPTIONS);
         let response = [{ name: labelName, erase: 0 }];
         try {
-            console.log("Request Api try");
             const respuesta = await REQUEST.json();
-            console.log(respuesta);
             response = __OPTIONS.method === "DELETE" ? [{ label: labelName, erase: 1 }] : respuesta;
         } catch (NotifyError) {
-            console.log("Request Api catch");
             console.error(NotifyError);
         }
         return response;
@@ -99,12 +95,12 @@ const CreateLabels = (() => {
     const __borrar = async () => {
         const LABELS = await __listar();
         let count = 0;
-        /*__OPTIONS.method = "DELETE";
+        __OPTIONS.method = "DELETE";
         for (const { name } of LABELS) {
             await __requestApi(`/${name}`);
             count += 1;
         }
-        console.log(`Etiquetas borradas = ${count}`);*/
+        console.log(`Etiquetas borradas = ${count}`);
     };
 
     /**
