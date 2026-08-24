@@ -2,6 +2,12 @@
 
 All notable changes to this project will be documented in this file. See [standard-version](https://github.com/conventional-changelog/standard-version) for commit guidelines.
 
+### [0.0.4](https://github.com/Code-Dojo-Labs/curso-webcomponets-devsensei/compare/v0.0.4-beta.1...v0.0.4) (2026-08-24)
+
+### Features
+
+-   **app:** nmas-006 uso de templates ([8d3d12c](https://github.com/Code-Dojo-Labs/curso-webcomponets-devsensei/commit/8d3d12c802e9dfc5a07aef2c75a882688a068f9b))
+
 ### [0.0.4-beta.1](https://github.com/Code-Dojo-Labs/curso-webcomponets-devsensei/compare/v0.0.4-beta.0...v0.0.4-beta.1) (2026-08-24)
 
 ### Features
