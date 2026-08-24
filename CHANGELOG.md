@@ -2,6 +2,12 @@
 
 All notable changes to this project will be documented in this file. See [standard-version](https://github.com/conventional-changelog/standard-version) for commit guidelines.
 
+### [0.0.2](https://github.com/Code-Dojo-Labs/curso-webcomponets-devsensei/compare/v0.0.2-beta.0...v0.0.2) (2026-08-24)
+
+### Features
+
+-   **app:** pr-003 uso de templates ([2eb80b0](https://github.com/Code-Dojo-Labs/curso-webcomponets-devsensei/commit/2eb80b021748bb310c04594cdad3bfe7c3bf6647))
+
 ### [0.0.2-beta.0](https://github.com/Code-Dojo-Labs/curso-webcomponets-devsensei/compare/v0.0.1...v0.0.2-beta.0) (2026-08-24)
 
 ### [0.0.1](https://github.com/Code-Dojo-Labs/curso-webcomponets-devsensei/compare/v0.0.1-beta.0...v0.0.1) (2026-08-24)
