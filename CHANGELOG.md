@@ -2,6 +2,12 @@
 
 All notable changes to this project will be documented in this file. See [standard-version](https://github.com/conventional-changelog/standard-version) for commit guidelines.
 
+### [0.0.3](https://github.com/Code-Dojo-Labs/curso-webcomponets-devsensei/compare/v0.0.2...v0.0.3) (2026-08-24)
+
+### Features
+
+-   **app:** nmas-004 uso de atributos ([50e60de](https://github.com/Code-Dojo-Labs/curso-webcomponets-devsensei/commit/50e60dea343c87b97750dca5d79a42c9d5cf0b92))
+
 ### [0.0.2](https://github.com/Code-Dojo-Labs/curso-webcomponets-devsensei/compare/v0.0.2-beta.0...v0.0.2) (2026-08-24)
 
 ### Features
