@@ -14,7 +14,12 @@ runs:
           shell: bash
           run: |
             git checkout ${{ inputs.baseBranch }}
-            git fetch; git pull
+            git fetch --prune
             echo "Pasando a la rama base: ${{ inputs.baseBranch }}"
-            echo "Borrando rama: ${{ inputs.branchToDelete }}"
-            git push origin --delete ${{ inputs.branchToDelete }}
+            # Verificar si la rama existe en el remoto antes de eliminar
+            if git ls-remote --exit-code --heads origin ${{ inputs.branchToDelete }} > /dev/null 2>&1; then
+              echo "Borrando rama remota: ${{ inputs.branchToDelete }}"
+              git push origin --delete ${{ inputs.branchToDelete }}
+            else
+              echo "La rama '${{ inputs.branchToDelete }}' no existe en el remoto, omitiendo borrado."
+            fi
