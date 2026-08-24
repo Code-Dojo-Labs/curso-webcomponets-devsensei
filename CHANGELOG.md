@@ -2,6 +2,12 @@
 
 All notable changes to this project will be documented in this file. See [standard-version](https://github.com/conventional-changelog/standard-version) for commit guidelines.
 
+### [0.0.5-beta.0](https://github.com/Code-Dojo-Labs/curso-webcomponets-devsensei/compare/v0.0.4...v0.0.5-beta.0) (2026-08-24)
+
+### Features
+
+-   **app:** pr-007 uso de eventos ([b64966f](https://github.com/Code-Dojo-Labs/curso-webcomponets-devsensei/commit/b64966f804901c2faf799ab385ca7a4d07579bda))
+
 ### [0.0.4](https://github.com/Code-Dojo-Labs/curso-webcomponets-devsensei/compare/v0.0.4-beta.1...v0.0.4) (2026-08-24)
 
 ### Features
