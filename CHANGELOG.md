@@ -2,6 +2,12 @@
 
 All notable changes to this project will be documented in this file. See [standard-version](https://github.com/conventional-changelog/standard-version) for commit guidelines.
 
+### [0.0.1](https://github.com/Code-Dojo-Labs/curso-webcomponets-devsensei/compare/v0.0.1-beta.0...v0.0.1) (2026-08-24)
+
+### Features
+
+-   **app:** pr-002 primer componente ([3c5b54f](https://github.com/Code-Dojo-Labs/curso-webcomponets-devsensei/commit/3c5b54f36d033c7d150b0ac723e465f0864d98bc))
+
 ### 0.0.1-beta.0 (2026-08-24)
 
 ### Features
