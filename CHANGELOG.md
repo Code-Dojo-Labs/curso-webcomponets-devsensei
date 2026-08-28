@@ -2,6 +2,12 @@
 
 All notable changes to this project will be documented in this file. See [standard-version](https://github.com/conventional-changelog/standard-version) for commit guidelines.
 
+### [0.0.5-beta.1](https://github.com/Code-Dojo-Labs/curso-webcomponets-devsensei/compare/v0.0.5-beta.0...v0.0.5-beta.1) (2026-08-28)
+
+### Bug Fixes
+
+-   **app:** uso de herencia de styles ([fbe15d8](https://github.com/Code-Dojo-Labs/curso-webcomponets-devsensei/commit/fbe15d8b439cbfe20d6c42c35ff0680166ed71c3))
+
 ### [0.0.5-beta.0](https://github.com/Code-Dojo-Labs/curso-webcomponets-devsensei/compare/v0.0.4...v0.0.5-beta.0) (2026-08-24)
 
 ### Features
