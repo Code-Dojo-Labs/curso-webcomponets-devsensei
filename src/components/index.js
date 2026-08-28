@@ -4,3 +4,4 @@ import "./pr3/Dynamic.js";
 import "./pr5/Button.js";
 import "./pr6/Template.js";
 import "./pr7/CustomForm.js";
+import "./pr8/CardStyle.js";
